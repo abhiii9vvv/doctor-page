@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@theme {
+  /* Warm clinical neutrals (replaces default cool gray) */
+  --color-stone-50: #faf8f5;
+  --color-stone-100: #f3efe8;
+  --color-stone-200: #e6e0d4;
+  --color-stone-300: #d3c9b6;
+  --color-stone-400: #ab9d84;
+  --color-stone-500: #857a64;
+  --color-stone-600: #64594a;
+  --color-stone-700: #4a4238;
+  --color-stone-800: #322c26;
+  --color-stone-900: #211d19;
+  --color-stone-950: #16130f;
+
+  /* Calming clinical teal / mint */
+  --color-teal-50: #eefaf7;
+  --color-teal-100: #d3f1ea;
+  --color-teal-200: #a7e3d6;
+  --color-teal-300: #74cfbd;
+  --color-teal-400: #46b6a2;
+  --color-teal-500: #279a88;
+  --color-teal-600: #1c7c6f;
+  --color-teal-700: #19645b;
+  --color-teal-800: #17504a;
+  --color-teal-900: #14433f;
+  --color-teal-950: #082623;
+
+  /* Warm accent for highlights, ratings, small details */
+  --color-clay-50: #fbf1ec;
+  --color-clay-100: #f5ddd0;
+  --color-clay-200: #eabda2;
+  --color-clay-300: #dc9877;
+  --color-clay-400: #cc7c57;
+  --color-clay-500: #b96140;
+  --color-clay-600: #984d32;
+  --color-clay-700: #7a3f2b;
+  --color-clay-800: #633425;
+  --color-clay-900: #512c20;
+
+  --font-heading: var(--font-fraunces);
+  --font-body: var(--font-manrope);
+
+  --shadow-soft: 0 1px 2px rgba(22, 19, 15, 0.04), 0 8px 24px -12px rgba(22, 19, 15, 0.12);
+  --shadow-lift: 0 2px 4px rgba(22, 19, 15, 0.05), 0 20px 40px -16px rgba(20, 67, 63, 0.22);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-stone-50);
+  color: var(--color-stone-800);
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::selection {
+  background: var(--color-teal-200);
+  color: var(--color-teal-900);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.bg-grain {
+  background-image: radial-gradient(circle at 1px 1px, rgba(20, 67, 63, 0.09) 1px, transparent 0);
+  background-size: 16px 16px;
+}
+
+.scroll-offset {
+  scroll-margin-top: 5.5rem;
+}
+
+.input-field {
+  @apply mt-1.5 w-full rounded-xl border border-stone-300 bg-stone-50 px-4 py-3 text-stone-900 placeholder:text-stone-400 focus:border-teal-600 focus:bg-white focus:outline-none focus:ring-2 focus:ring-teal-600/30;
+}
