@@ -4,7 +4,7 @@ export function MapPlaceholder({ className }: { className?: string }) {
   return (
     <div
       role="img"
-      aria-label="Stylized map showing Whitfield Dental Studio's location on Willow Grove Lane"
+      aria-label="Stylised map showing the clinic's location on 100 Feet Road, Indiranagar"
       className={`relative overflow-hidden rounded-3xl bg-teal-50 ${className ?? ""}`}
     >
       <svg viewBox="0 0 600 400" className="h-full w-full" aria-hidden="true">

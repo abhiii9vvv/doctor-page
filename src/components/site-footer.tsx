@@ -18,29 +18,29 @@ export function SiteFooter() {
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <Link href="#top" className="flex items-center gap-2.5">
-              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-teal-700 text-white">
+              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[linear-gradient(135deg,#3d61f0,#7c3aed)] text-white">
                 <ToothIcon className="h-5 w-5" />
               </span>
-              <span className="font-heading text-lg font-medium text-white">
+              <span className="font-heading text-lg font-bold text-white">
                 {clinic.name}
               </span>
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-stone-400">
               Gentle, modern cosmetic and family dentistry in the heart of
-              Ashbrook.
+              Indiranagar, Bengaluru.
             </p>
             <div className="mt-5 flex items-center gap-3">
               <a
                 href="https://instagram.com"
-                aria-label="Whitfield Dental Studio on Instagram"
-                className="flex h-9 w-9 items-center justify-center rounded-full border border-stone-700 text-stone-400 transition-colors hover:border-teal-600 hover:text-teal-400"
+                aria-label={`${clinic.name} on Instagram`}
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-stone-700 text-stone-400 transition-colors hover:border-teal-500 hover:text-teal-400"
               >
                 <InstagramIcon className="h-4 w-4" />
               </a>
               <a
                 href="https://facebook.com"
-                aria-label="Whitfield Dental Studio on Facebook"
-                className="flex h-9 w-9 items-center justify-center rounded-full border border-stone-700 text-stone-400 transition-colors hover:border-teal-600 hover:text-teal-400"
+                aria-label={`${clinic.name} on Facebook`}
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-stone-700 text-stone-400 transition-colors hover:border-teal-500 hover:text-teal-400"
               >
                 <FacebookIcon className="h-4 w-4" />
               </a>

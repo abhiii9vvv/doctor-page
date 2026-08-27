@@ -1,49 +1,49 @@
 @import "tailwindcss";
 
 @theme {
-  /* Warm clinical neutrals (replaces default cool gray) */
-  --color-stone-50: #faf8f5;
-  --color-stone-100: #f3efe8;
-  --color-stone-200: #e6e0d4;
-  --color-stone-300: #d3c9b6;
-  --color-stone-400: #ab9d84;
-  --color-stone-500: #857a64;
-  --color-stone-600: #64594a;
-  --color-stone-700: #4a4238;
-  --color-stone-800: #322c26;
-  --color-stone-900: #211d19;
-  --color-stone-950: #16130f;
+  /* Clean cool-gray neutrals so colour pops */
+  --color-stone-50: #f7f8fb;
+  --color-stone-100: #eef1f7;
+  --color-stone-200: #e1e6f0;
+  --color-stone-300: #c9d1e1;
+  --color-stone-400: #98a3ba;
+  --color-stone-500: #6b7789;
+  --color-stone-600: #4c5768;
+  --color-stone-700: #394252;
+  --color-stone-800: #242b38;
+  --color-stone-900: #161b25;
+  --color-stone-950: #0c0f16;
 
-  /* Calming clinical teal / mint */
-  --color-teal-50: #eefaf7;
-  --color-teal-100: #d3f1ea;
-  --color-teal-200: #a7e3d6;
-  --color-teal-300: #74cfbd;
-  --color-teal-400: #46b6a2;
-  --color-teal-500: #279a88;
-  --color-teal-600: #1c7c6f;
-  --color-teal-700: #19645b;
-  --color-teal-800: #17504a;
-  --color-teal-900: #14433f;
-  --color-teal-950: #082623;
+  /* Primary — bright, trustworthy blue (replaces the old teal) */
+  --color-teal-50: #eef3ff;
+  --color-teal-100: #dbe5ff;
+  --color-teal-200: #bccfff;
+  --color-teal-300: #90aeff;
+  --color-teal-400: #6285fb;
+  --color-teal-500: #3d61f0;
+  --color-teal-600: #2a46da;
+  --color-teal-700: #2237b4;
+  --color-teal-800: #203190;
+  --color-teal-900: #1e2e73;
+  --color-teal-950: #151d45;
 
-  /* Warm accent for highlights, ratings, small details */
-  --color-clay-50: #fbf1ec;
-  --color-clay-100: #f5ddd0;
-  --color-clay-200: #eabda2;
-  --color-clay-300: #dc9877;
-  --color-clay-400: #cc7c57;
-  --color-clay-500: #b96140;
-  --color-clay-600: #984d32;
-  --color-clay-700: #7a3f2b;
-  --color-clay-800: #633425;
-  --color-clay-900: #512c20;
+  /* Warm accent — saffron / coral (replaces the old clay) */
+  --color-clay-50: #fff5ed;
+  --color-clay-100: #ffe7d3;
+  --color-clay-200: #ffcaa5;
+  --color-clay-300: #ffa66d;
+  --color-clay-400: #ff7d38;
+  --color-clay-500: #fb5f18;
+  --color-clay-600: #e5470f;
+  --color-clay-700: #bd340f;
+  --color-clay-800: #962c14;
+  --color-clay-900: #7a2814;
 
-  --font-heading: var(--font-fraunces);
-  --font-body: var(--font-manrope);
+  --font-heading: var(--font-poppins);
+  --font-body: var(--font-inter);
 
-  --shadow-soft: 0 1px 2px rgba(22, 19, 15, 0.04), 0 8px 24px -12px rgba(22, 19, 15, 0.12);
-  --shadow-lift: 0 2px 4px rgba(22, 19, 15, 0.05), 0 20px 40px -16px rgba(20, 67, 63, 0.22);
+  --shadow-soft: 0 1px 2px rgba(22, 27, 37, 0.04), 0 10px 28px -14px rgba(22, 27, 37, 0.14);
+  --shadow-lift: 0 2px 6px rgba(22, 27, 37, 0.06), 0 26px 50px -18px rgba(61, 97, 240, 0.32);
 }
 
 html {
@@ -54,6 +54,13 @@ body {
   background: var(--color-stone-50);
   color: var(--color-stone-800);
   font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3,
+.font-heading {
+  font-family: var(--font-heading), ui-sans-serif, system-ui, sans-serif;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -80,8 +87,28 @@ body {
 }
 
 .bg-grain {
-  background-image: radial-gradient(circle at 1px 1px, rgba(20, 67, 63, 0.09) 1px, transparent 0);
+  background-image: radial-gradient(circle at 1px 1px, rgba(61, 97, 240, 0.1) 1px, transparent 0);
   background-size: 16px 16px;
+}
+
+/* Colourful "splash" backgrounds — soft blooms of colour behind sections */
+.splash-hero {
+  background:
+    radial-gradient(46% 42% at 12% 18%, rgba(61, 97, 240, 0.22), transparent 70%),
+    radial-gradient(42% 40% at 88% 12%, rgba(255, 125, 56, 0.20), transparent 70%),
+    radial-gradient(50% 46% at 78% 88%, rgba(139, 92, 246, 0.18), transparent 70%),
+    radial-gradient(40% 40% at 22% 92%, rgba(16, 185, 129, 0.16), transparent 70%);
+}
+
+.splash-band {
+  background:
+    radial-gradient(40% 60% at 8% 30%, rgba(61, 97, 240, 0.14), transparent 72%),
+    radial-gradient(38% 60% at 92% 70%, rgba(255, 125, 56, 0.14), transparent 72%);
+}
+
+.splash-booking {
+  background:
+    linear-gradient(135deg, #2237b4 0%, #3d61f0 45%, #7c3aed 100%);
 }
 
 .scroll-offset {
@@ -89,5 +116,5 @@ body {
 }
 
 .input-field {
-  @apply mt-1.5 w-full rounded-xl border border-stone-300 bg-stone-50 px-4 py-3 text-stone-900 placeholder:text-stone-400 focus:border-teal-600 focus:bg-white focus:outline-none focus:ring-2 focus:ring-teal-600/30;
+  @apply mt-1.5 w-full rounded-xl border border-stone-300 bg-white px-4 py-3 text-stone-900 placeholder:text-stone-400 focus:border-teal-500 focus:bg-white focus:outline-none focus:ring-2 focus:ring-teal-500/30;
 }

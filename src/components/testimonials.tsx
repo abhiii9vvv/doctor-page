@@ -44,12 +44,12 @@ export function Testimonials() {
     >
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="font-heading text-sm font-medium uppercase tracking-[0.14em] text-teal-700">
+          <p className="font-heading text-sm font-semibold uppercase tracking-[0.14em] text-clay-600">
             Patient stories
           </p>
           <h2
             id="testimonials-heading"
-            className="mt-3 text-balance font-heading text-3xl font-medium tracking-tight text-stone-900 sm:text-4xl"
+            className="mt-3 text-balance font-heading text-3xl font-bold tracking-tight text-stone-900 sm:text-4xl"
           >
             What patients say after visiting
           </h2>
@@ -66,10 +66,10 @@ export function Testimonials() {
             role="region"
             aria-roledescription="carousel"
             aria-label="Patient testimonials"
-            className="rounded-3xl border border-stone-200 bg-stone-50 px-8 py-10 sm:px-14 sm:py-14"
+            className="rounded-3xl border border-teal-100 bg-gradient-to-br from-teal-50 to-clay-50 px-8 py-10 sm:px-14 sm:py-14"
           >
             <Quote
-              className="h-9 w-9 text-teal-200"
+              className="h-9 w-9 text-clay-400"
               strokeWidth={1.5}
               aria-hidden="true"
             />
@@ -85,7 +85,7 @@ export function Testimonials() {
                   <Star key={i} className="h-4 w-4 fill-clay-400 text-clay-400" strokeWidth={0} />
                 ))}
               </div>
-              <p className="mt-4 text-balance font-heading text-xl font-normal leading-relaxed text-stone-800 sm:text-2xl">
+              <p className="mt-4 text-balance font-heading text-xl font-medium leading-relaxed text-stone-800 sm:text-2xl">
                 &ldquo;{active.quote}&rdquo;
               </p>
               <div className="mt-7 flex items-center gap-3.5">
@@ -102,7 +102,7 @@ export function Testimonials() {
             <button
               type="button"
               onClick={prev}
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-stone-300 text-stone-600 transition-colors hover:border-teal-300 hover:text-teal-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2"
+              className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-teal-200 text-teal-700 transition-colors hover:border-teal-400 hover:bg-teal-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:ring-offset-2"
             >
               <span className="sr-only">Previous testimonial</span>
               <ChevronLeft className="h-5 w-5" aria-hidden="true" />
@@ -117,7 +117,7 @@ export function Testimonials() {
                   aria-label={`Go to testimonial ${i + 1}`}
                   aria-current={i === index}
                   className={`h-2 rounded-full transition-all ${
-                    i === index ? "w-6 bg-teal-700" : "w-2 bg-stone-300 hover:bg-stone-400"
+                    i === index ? "w-6 bg-clay-500" : "w-2 bg-stone-300 hover:bg-stone-400"
                   }`}
                 />
               ))}
@@ -126,7 +126,7 @@ export function Testimonials() {
             <button
               type="button"
               onClick={next}
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-stone-300 text-stone-600 transition-colors hover:border-teal-300 hover:text-teal-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2"
+              className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-teal-200 text-teal-700 transition-colors hover:border-teal-400 hover:bg-teal-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:ring-offset-2"
             >
               <span className="sr-only">Next testimonial</span>
               <ChevronRight className="h-5 w-5" aria-hidden="true" />

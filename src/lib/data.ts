@@ -1,119 +1,131 @@
 export const clinic = {
-  name: "Whitfield Dental Studio",
-  doctorName: "Dr. Maya Whitfield, DDS",
+  name: "Smile Care Dental Clinic",
+  doctorName: "Dr. Ananya Sharma, BDS, MDS",
   specialty: "Cosmetic & Family Dentistry",
-  phone: "(555) 213-0847",
-  phoneHref: "tel:+15552130847",
-  email: "hello@whitfielddental.com",
+  phone: "+91 98765 43210",
+  phoneHref: "tel:+919876543210",
+  email: "hello@smilecaredental.in",
   address: {
-    line1: "482 Willow Grove Lane, Suite 210",
-    line2: "Ashbrook, CA 94110",
+    line1: "12, 100 Feet Road, Indiranagar",
+    line2: "Bengaluru, Karnataka 560038",
   },
 };
 
 export const hours = [
-  { day: "Monday – Thursday", time: "8:00 AM – 6:00 PM" },
-  { day: "Friday", time: "8:00 AM – 4:00 PM" },
-  { day: "Saturday", time: "9:00 AM – 2:00 PM" },
-  { day: "Sunday", time: "Closed" },
+  { day: "Monday – Friday", time: "9:30 AM – 8:00 PM" },
+  { day: "Saturday", time: "9:30 AM – 6:00 PM" },
+  { day: "Sunday", time: "10:00 AM – 2:00 PM" },
 ];
 
 export const credentials = [
   {
-    year: "2010",
-    title: "DDS, University of Michigan School of Dentistry",
-    detail: "Graduated with honors, Doctor of Dental Surgery",
+    year: "2008",
+    title: "BDS, Government Dental College & Research Institute, Bengaluru",
+    detail: "Bachelor of Dental Surgery — graduated with distinction",
   },
   {
-    year: "2012",
-    title: "Fellowship, Academy of General Dentistry",
-    detail: "FAGD — advanced continuing education in general dentistry",
+    year: "2011",
+    title: "MDS, Manipal College of Dental Sciences",
+    detail: "Conservative Dentistry & Endodontics — gold medallist",
   },
   {
     year: "2015",
-    title: "Advanced Cosmetic Dentistry Certification",
-    detail: "Las Vegas Institute for Advanced Dental Studies",
+    title: "Fellowship in Clinical Implantology",
+    detail: "International Congress of Oral Implantologists (ICOI)",
   },
   {
-    year: "2018",
-    title: "Opened Whitfield Dental Studio",
-    detail: "Built a family-centered practice rooted in preventive care",
+    year: "2017",
+    title: "Founded Smile Care Dental Clinic",
+    detail: "A family-first practice in Indiranagar built around preventive care",
   },
 ];
 
 export const stats = [
-  { label: "Years in Practice", value: "14+" },
-  { label: "Patients Treated", value: "3,000+" },
-  { label: "Average Rating", value: "4.9 / 5" },
+  { label: "Years in Practice", value: "16+" },
+  { label: "Happy Patients", value: "12,000+" },
+  { label: "Google Rating", value: "4.9 / 5" },
+];
+
+export const trustPoints = [
+  { label: "Fully sterilised equipment", accent: "teal" as const },
+  { label: "Painless treatment focus", accent: "emerald" as const },
+  { label: "0% EMI on major work", accent: "clay" as const },
+  { label: "All insurance & TPA accepted", accent: "violet" as const },
 ];
 
 export const services = [
   {
     icon: "tooth" as const,
-    title: "Preventive Cleanings",
+    accent: "teal" as const,
+    title: "Cleaning & Preventive Care",
     description:
-      "Routine exams, cleanings, and digital X-rays to catch issues early and keep your smile healthy.",
+      "Scaling, polishing, and digital X-rays to catch problems early and keep your whole family's smile healthy.",
   },
   {
     icon: "sparkles" as const,
+    accent: "clay" as const,
     title: "Teeth Whitening",
     description:
-      "Professional-grade whitening treatments for a noticeably brighter, more confident smile.",
+      "Safe, professional whitening that lifts years of tea, coffee, and tobacco stains in a single sitting.",
   },
   {
     icon: "shield" as const,
+    accent: "violet" as const,
     title: "Dental Implants",
     description:
-      "Durable, natural-looking replacements for missing teeth, planned with 3D imaging precision.",
+      "Strong, natural-looking replacements for missing teeth, planned with 3D CBCT imaging precision.",
   },
   {
     icon: "appliance" as const,
-    title: "Orthodontics",
+    accent: "emerald" as const,
+    title: "Braces & Clear Aligners",
     description:
-      "Traditional braces and clear aligner therapy tailored to your bite, at any age.",
+      "Metal braces and invisible aligner therapy tailored to your bite — for teenagers and adults alike.",
   },
   {
     icon: "activity" as const,
-    title: "Root Canal Therapy",
+    accent: "sky" as const,
+    title: "Root Canal Treatment",
     description:
-      "Gentle, modern endodontic care that relieves pain and saves your natural tooth.",
+      "Gentle, single-visit RCT with rotary endodontics that relieves pain and saves your natural tooth.",
   },
   {
     icon: "baby" as const,
-    title: "Pediatric Dentistry",
+    accent: "amber" as const,
+    title: "Kids' Dentistry",
     description:
-      "A calm, friendly first-visit experience that helps kids build healthy habits early.",
+      "A calm, friendly first visit that helps children build healthy brushing habits without fear.",
   },
 ];
 
 export const testimonials = [
   {
-    name: "Priya Anand",
+    name: "Priya Nair",
     role: "Patient since 2019",
     rating: 5,
     quote:
-      "Dr. Whitfield explains everything before she does it, which makes such a difference. My cleanings are quick, thorough, and honestly kind of relaxing now.",
+      "Dr. Ananya explains every step before she starts, which really settles the nerves. My cleanings are quick, thorough, and honestly quite relaxing now.",
   },
   {
-    name: "Marcus Ibe",
+    name: "Rahul Menon",
     role: "Patient since 2021",
     rating: 5,
     quote:
-      "I put off a root canal for years out of fear. The team walked me through the whole process and it ended up being completely painless. Wish I'd come sooner.",
+      "I put off a root canal for years out of fear. The team walked me through the whole process and it was completely painless. I only wish I'd come sooner.",
   },
   {
-    name: "Grace Feldman",
+    name: "Sneha Reddy",
     role: "Parent of two patients",
     rating: 5,
     quote:
-      "Both of my kids actually look forward to the dentist now. The staff is patient, warm, and great with anxious first-timers.",
+      "Both my kids actually look forward to the dentist now. The staff is patient, warm, and wonderful with anxious first-timers.",
   },
   {
-    name: "Daniel Okoye",
+    name: "Arjun Iyer",
     role: "Patient since 2017",
     rating: 5,
     quote:
-      "Got Invisalign here as an adult and the results exceeded what I expected. Every appointment ran on time and the front desk is genuinely lovely.",
+      "Got my aligners done here as an adult and the result went beyond what I expected. Every appointment ran on time and the front desk is genuinely lovely.",
   },
 ];
 

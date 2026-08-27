@@ -23,10 +23,10 @@ export function SiteHeader() {
           href="#top"
           className="flex items-center gap-2.5 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:ring-offset-2 focus-visible:ring-offset-stone-50"
         >
-          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-teal-700 text-white">
+          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[linear-gradient(135deg,#3d61f0,#7c3aed)] text-white">
             <ToothIcon className="h-5 w-5" />
           </span>
-          <span className="font-heading text-lg font-medium tracking-tight text-stone-900">
+          <span className="font-heading text-lg font-bold tracking-tight text-stone-900">
             {clinic.name}
           </span>
         </Link>
@@ -53,7 +53,7 @@ export function SiteHeader() {
           </a>
           <a
             href="#booking"
-            className="rounded-full bg-teal-700 px-5 py-2.5 text-sm font-semibold text-white shadow-soft transition-colors hover:bg-teal-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2"
+            className="rounded-full bg-teal-600 px-5 py-2.5 text-sm font-semibold text-white shadow-soft transition-colors hover:bg-teal-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:ring-offset-2"
           >
             Book Appointment
           </a>

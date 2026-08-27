@@ -21,12 +21,12 @@ export function Contact() {
     >
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="font-heading text-sm font-medium uppercase tracking-[0.14em] text-teal-700">
+          <p className="font-heading text-sm font-semibold uppercase tracking-[0.14em] text-clay-600">
             Visit us
           </p>
           <h2
             id="contact-heading"
-            className="mt-3 text-balance font-heading text-3xl font-medium tracking-tight text-stone-900 sm:text-4xl"
+            className="mt-3 text-balance font-heading text-3xl font-bold tracking-tight text-stone-900 sm:text-4xl"
           >
             Location, hours, and how to reach us
           </h2>
@@ -38,7 +38,7 @@ export function Contact() {
 
             <div className="grid gap-6 sm:grid-cols-2">
               <div className="flex gap-3.5">
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-teal-50 text-teal-700">
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-teal-100 text-teal-700">
                   <MapPin className="h-5 w-5" strokeWidth={1.75} aria-hidden="true" />
                 </span>
                 <div>
@@ -52,7 +52,7 @@ export function Contact() {
               </div>
 
               <div className="flex gap-3.5">
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-teal-50 text-teal-700">
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-700">
                   <Phone className="h-5 w-5" strokeWidth={1.75} aria-hidden="true" />
                 </span>
                 <div>
@@ -67,7 +67,7 @@ export function Contact() {
               </div>
 
               <div className="flex gap-3.5">
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-teal-50 text-teal-700">
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-clay-100 text-clay-700">
                   <Mail className="h-5 w-5" strokeWidth={1.75} aria-hidden="true" />
                 </span>
                 <div>
@@ -82,7 +82,7 @@ export function Contact() {
               </div>
 
               <div className="flex gap-3.5">
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-teal-50 text-teal-700">
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-violet-100 text-violet-700">
                   <Clock className="h-5 w-5" strokeWidth={1.75} aria-hidden="true" />
                 </span>
                 <div>
@@ -100,8 +100,8 @@ export function Contact() {
             </div>
           </div>
 
-          <div className="rounded-3xl border border-stone-200 bg-white p-8 sm:p-10">
-            <h3 className="font-heading text-xl font-medium text-stone-900">
+          <div className="rounded-3xl border border-stone-200 bg-white p-8 shadow-soft sm:p-10">
+            <h3 className="font-heading text-xl font-semibold text-stone-900">
               Send a message
             </h3>
             <p className="mt-1.5 text-sm text-stone-600">

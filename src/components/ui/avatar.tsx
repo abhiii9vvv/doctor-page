@@ -1,7 +1,8 @@
 const PALETTE = [
-  { bg: "bg-teal-100", text: "text-teal-800" },
+  { bg: "bg-teal-100", text: "text-teal-700" },
   { bg: "bg-clay-100", text: "text-clay-700" },
-  { bg: "bg-stone-200", text: "text-stone-700" },
+  { bg: "bg-violet-100", text: "text-violet-700" },
+  { bg: "bg-emerald-100", text: "text-emerald-700" },
 ];
 
 function initials(name: string) {

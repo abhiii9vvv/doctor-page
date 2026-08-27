@@ -27,20 +27,20 @@ export function Booking() {
     <section
       id="booking"
       aria-labelledby="booking-heading"
-      className="scroll-offset bg-teal-900 py-20 sm:py-28"
+      className="splash-booking scroll-offset py-20 sm:py-28"
     >
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="font-heading text-sm font-medium uppercase tracking-[0.14em] text-teal-300">
+          <p className="font-heading text-sm font-semibold uppercase tracking-[0.14em] text-clay-200">
             Book online
           </p>
           <h2
             id="booking-heading"
-            className="mt-3 text-balance font-heading text-3xl font-medium tracking-tight text-white sm:text-4xl"
+            className="mt-3 text-balance font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl"
           >
             Request your appointment
           </h2>
-          <p className="mt-4 text-lg leading-relaxed text-teal-100">
+          <p className="mt-4 text-lg leading-relaxed text-teal-50">
             Fill out the form below and our front desk will confirm your visit
             within one business day.
           </p>
